@@ -1,11 +1,11 @@
 ######################## default configuration ####################
 baseURL = "https://hossein.blog"
 languageCode = "en-us"
-title = "Hossein's Blog | Anything Around"
+title = "Hossein's Blog | Blogging Around"
 theme = "liva-hugo"
 summaryLength = "10"
 paginate = 6
-disqusShortname = ""
+disqusShortname = "hossein.blog"
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
@@ -81,12 +81,12 @@ disqusShortname = ""
 logo = "images/logo.png"
 home = "Home"
 # Meta data
-description = ""
+description = "I'm Hossein. A web developer who is curious about everything. Here is are my sharing about everything I face or explore. I will write articles about general topics, programming, technology, and data science."
 author = "Hossein Shahsahebi"
 # Google Analitycs
 googleAnalitycsID = "UA-161962212-1"
 # Contact Information
-mobile = ""
+mobile = "+601123209399"
 email = "me@hossein.blog"
 location = "Kuala Lumpur, Malaysia"
 # copyright
@@ -103,32 +103,32 @@ copyright = "| Hossein's blog, developed with <3 using Hugo & [Themefisher](http
 
 ############################ news letter ########################
 [params.newsletter]
-enable = true
+enable = false
 title = "Join My Newsletter"
-content = "I have plan to publish two articles per week about the programming world. They could be general or specific. It's fun, join me and we'll explore together."
+content = ""
 
 ############################# social site ########################
 [[params.social]]
 title = "facebook"
 icon = "ti-facebook" # themify icon : https://themify.me/themify-icons
-link = "#"
+link = "https://www.facebook.com/hossein.blog"
 
 [[params.social]]
 title = "twitter"
 icon = "ti-twitter-alt" # themify icon : https://themify.me/themify-icons
-link = "#"
+link = "https://twitter.com/hossein_blog"
 
 [[params.social]]
 title = "instagram"
 icon = "ti-instagram" # themify icon : https://themify.me/themify-icons
-link = "#"
+link = "https://www.instagram.com/hossein.blog"
 
 [[params.social]]
 title = "github"
 icon = "ti-github" # themify icon : https://themify.me/themify-icons
-link = "#"
+link = "https://github.com/hshahsahebi"
 
 [[params.social]]
 title = "linkedin"
 icon = "ti-linkedin" # themify icon : https://themify.me/themify-icons
-link = "#"
+link = "https://www.linkedin.com/in/hshahsahebi/"
