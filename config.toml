@@ -78,8 +78,12 @@ author = "Hossein Shahsahebi"
 googleAnalitycsID = "UA-161962212-1"
 # Contact Information
 mobile = "+601123209399"
-email = "me@hossein.blog"
+mobile_enabled = false
+email_text = "me [at] hossein.blog"
+email_link = "me@hossein.blog"
+email_enabled = true
 location = "Kuala Lumpur, Malaysia"
+location_enabled = true
 # copyright
 copyright = "| Hossein's blog, developed by me using [Hugo](https://hugo.com) & [Themefisher](https://themefisher.com) |"
 
