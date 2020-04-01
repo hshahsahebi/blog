@@ -1,0 +1,21 @@
+.font-weight-medium, .btn{
+  font-weight: $font_weight_medium !important;
+}
+
+.post-meta {
+  span {
+    color: #444;
+    font-weight: $font_weight_medium;
+    font-weight: 300;
+    font-size: .85rem;
+    font-family: $secondary_font;
+  }
+}
+
+.content{
+  p{
+      text-align: justify;
+      font-size: $post_font_size;
+      color: #131516;
+  }
+}
