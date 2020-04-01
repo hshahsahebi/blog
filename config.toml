@@ -85,7 +85,7 @@ copyright = "| Hossein's blog, developed by me using [Hugo](https://hugo.com) & 
 
   # Preloader
   [params.preloader]
-  enable = true
+  enable = false
   preloader = "" # use .png , .svg or .gif format
 
   # search
