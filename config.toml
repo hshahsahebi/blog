@@ -5,7 +5,7 @@ title = "Hossein's Blog | Blogging Around"
 theme = "liva-hugo"
 summaryLength = "10"
 paginate = 6
-disqusShortname = "hossein.blog"
+disqusShortname = "hossein_blog"
 enableEmoji = true
 
 [outputs]
