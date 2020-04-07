@@ -70,6 +70,6 @@ Using this section, you have an overview about who has access to the panel and w
 
 Search Console itself says that it almost update the result every four hours but that doesn't mean the update is related to last 4 hours  :neutral_face:.  
 
-*What am I talking abut?*  
+*What am I talking about?*  
 
 Simply, I'm saying do not rely on the Search Console Report for the current day or even be careful about the day before. Normally, I rely on the result for more than 24 hours ago. Because, I noticed changes in the report of recent traffic while I was analyzing the result.
