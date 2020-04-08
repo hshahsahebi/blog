@@ -39,3 +39,11 @@ h5, .h5{
 h6, .h6{
     font-size: $h6_font_size;
 }
+
+.highlight {
+    pre {
+        code {
+            color: #bbb;
+        }
+    }
+}
