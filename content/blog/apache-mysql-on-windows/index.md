@@ -1,7 +1,8 @@
 ---
 title: "Best Approach to Have Apache and Mysql on Windows"
 date: 2020-04-07T21:15:52+08:00
-draft: true
+draft: false
+publishDate: 2020-04-09T00:26:00+08:00
 
 # post thumb
 image: "images/post/apache-mysql-on-windows.jpg"
