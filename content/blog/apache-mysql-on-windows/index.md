@@ -3,6 +3,7 @@ title: "Best Approach to Have Apache and Mysql on Windows"
 date: 2020-04-07T21:15:52+08:00
 draft: false
 publishDate: 2020-04-09T00:26:00+08:00
+Lastmod: 2020-04-10T01:13:00+08:00
 
 # post thumb
 image: "images/post/apache-mysql-on-windows.jpg"
@@ -70,11 +71,23 @@ However, you are able to integrate Nginx, Memcached, and Redis with single click
 
 If you want to add another service to be started on start-up or change services' ports, just go to settings and `Servises & Ports` tab.  
 
-## 3. MySQL Databases Interface  
+## 3. Make Your Local Project Publicly Accessible (Sharing Feature)  
+
+And now the coolest feature. Laragon is using [Ngrok](https://ngrok.com/) to allow you to share your local project and able to access it with a URL address like `[Hash_Key].ngrok.io`. Based on the direct quote:  
+
+>ngrok exposes local servers behind NATs and firewalls to the public internet over secure tunnels.  
+
+In Laragon, you can share any project under `www` folder by clicking on the `Menu -> www -> share -> [Project_Name]`. After clicking on share, a CMD window will be opened and the `ngrok.io` specific URL will be copied into your clipboard. Also, a notification will pop up which shows that a URL will point to your local `.test:` URL on port 80.  
+
+![Ngrok CMD](ngrok-cmd.jpg)
+
+That's all. Now you can give that URL to your friend to check out your local changes or you can open the URL in your mobile device for an actual testing purposes.
+
+## 4. MySQL Databases Interface  
 
 Laragon shipped with HeidiSQL by default. But, if you're into PHPMyAdmin, you just need to download it and extract it under `etc/apps/phpMyAdmin` folder. Then you can access it simply with `localhost/phpmyadmin`.  
 
-## 4. Multi-Version  
+## 5. Multi-Version  
 
 You want to have more than one PHP or MySQL version? You can have any number of versions you want by installing that version yourself in `bin/` folder. Every app or service here has a folder, such as `php`, `apache`, `mysql`, `nginx`, and so on. This structure enables you to have multi-version of every apps and services in Laragon.  
 
