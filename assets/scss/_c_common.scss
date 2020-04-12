@@ -18,4 +18,10 @@
       font-size: $post_font_size;
       color: #131516;
   }
+  img {
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
