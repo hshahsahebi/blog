@@ -55,5 +55,98 @@
     {{ "<!--Favicon-->" | safeHTML }}
     <link rel="shortcut icon" href="{{ `images/favicon.png` | absURL }} " type="image/x-icon">
     <link rel="icon" href="{{ `images/favicon.png` | absURL }} " type="image/x-icon">
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            {{ if eq $postPage true  }}
+
+                "@type": "BlogPosting",
+                "articleSection": [
+                    {{ range .Params.Categories }}
+                        {{ . | humanize }},
+                    {{ end }}
+                    "Hossein"
+                ],
+                "wordCount": {{ .WordCount }},
+                "dateCreated": {{ .Date }},
+                {{ if not .Lastmod.IsZero }}
+                    "dateModified": {{ .Lastmod.Format "2006-01-02T15:04:05-07:00" }},
+                {{ end }}
+                "datePublished": {{ .PublishDate.Format "2006-01-02T15:04:05-07:00" }},
+                "headline": {{ .Title }},
+                "inLanguage": [
+                    "en-US"
+                ], 
+                "mainEntityOfPage": {
+                    "@type": "WebPage",
+                    "@id": {{ .Permalink }}
+                },
+                "description": {{ .Summary }},
+                "image": {{ .Params.Image | absURL  }},
+                "name": {{ .Title }},
+                "url": {{ .Permalink }},
+
+
+            {{ else }}
+
+                "@type": "WebSite",
+                "name": "Hossein's Blog",
+                "description": {{ .Site.Params.description }},
+                "url": {{ .Site.BaseURL }},
+                "about": {
+                    "@type": "Thing",
+                    "url": {{ `about` | absURL }}
+                },
+                "genre": [
+                    "Technology",
+                    "Programming",
+                    "Analytics",
+                    "SEO",
+                    "Marketing"
+                ],
+                "headline": {{ .Title }},
+                "inLanguage": [
+                    "en-US"
+                ],
+                "keywords": [
+                    {{ range $txn := .Site.Taxonomies }}
+                        {{ range $name, $items := $txn }}
+                            "{{ $name | humanize }}",
+                        {{ end }}
+                    {{ end }}
+                    "Hossein"
+                ], 
+                "mainEntityOfPage": {
+                    "@type": "WebPage",
+                    "@id": {{ .Site.BaseURL }}
+                },
+                "image": {{ `images/logo.png` | absURL }},
+                "sameAs": [
+                    "https://www.facebook.com/hossein.blog",
+                    "https://twitter.com/hossein_blog",
+                    "https://www.instagram.com/hossein.blog",
+                    "https://github.com/hshahsahebi",
+                    "https://www.linkedin.com/in/hshahsahebi"
+                ],
+
+            {{ end }}
+
+            "author": {
+                "@type": "Person",
+                "name": "Hossein Shahsahebi",
+                "image": {{ `images/author.jpg` | absURL }},
+                "sameAs": [
+                    "https://www.linkedin.com/in/hshahsahebi/",
+                    "https://github.com/hshahsahebi"
+                ]
+            },
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": {{ print .Site.BaseURL "search/?s={query}" }},
+                "query-input": "required name=query"
+            }
+        }
+    </script>
   
 </head>
