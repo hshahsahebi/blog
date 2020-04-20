@@ -107,3 +107,6 @@
   ga('create', '{{ .Site.Params.googleAnalitycsID }}', 'auto');
   ga('send', 'pageview');
 </script>
+{{ if or (eq .Params.type "post") (eq .Params.type "feature") }}
+<script type="text/javascript" src="https://comment.hossein.blog/comments.php"></script> 
+{{ end }}

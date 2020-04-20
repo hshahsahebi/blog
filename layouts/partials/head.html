@@ -56,6 +56,10 @@
     <link rel="shortcut icon" href="{{ `images/favicon.png` | absURL }} " type="image/x-icon">
     <link rel="icon" href="{{ `images/favicon.png` | absURL }} " type="image/x-icon">
 
+    {{ if eq $postPage true }}
+    <link rel="stylesheet" type="text/css" href="https://comment.hossein.blog/themes/default/comments.css"> 
+    {{ end }}
+
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
