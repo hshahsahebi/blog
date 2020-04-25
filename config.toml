@@ -76,7 +76,7 @@ enableRobotsTXT = true
 logo = "images/logo.png"
 home = "Home"
 # Meta data
-description = "The programming world is enormous. There are lots of articles, tips, and tricks out there that might get you overwhelmed. But every single hint might save your time or help you in your future career. So, don't miss my articles about programming, web development, SEO, analytics, developers' daily life, and many other similar posts about our tech world. Join me, and let's grow together!"
+description = "Here, I'm going to write about my daily life as a web developer. Technologies, tools, programming languages, webmaster-related, and many more categories that seems reasonable to know about in programming world. There might be some non-technical articles as well but there is a reason behind everything in Hossein's blog!"
 author = "Hossein Shahsahebi"
 # Google Analitycs
 googleAnalitycsID = "UA-161962212-1"
