@@ -55,7 +55,7 @@ enableEmoji = true
   
   [[menu.main]]
   name = "Post"
-  URL = "blog"
+  URL = "posts"
   weight = 2
 
   # footer menu
@@ -66,7 +66,7 @@ enableEmoji = true
   
   [[menu.footer]]
   name = "Post"
-  URL = "blog"
+  URL = "posts"
   weight = 2
 
 
@@ -75,7 +75,7 @@ enableEmoji = true
 logo = "images/logo.png"
 home = "Home"
 # Meta data
-description = "I'm Hossein. A curious web developer who explores and observes and follow what interests me. Here is my sharing about what I find interesting around the globe :)"
+description = "Here you can read about techs articles. I write about the technologies, and tools I find interesting to work with. Artcles about programming, SEO, analytics, developer's daily life and concerns, and many more related stuff. Join me in this adventure and help each other to grow."
 author = "Hossein Shahsahebi"
 # Google Analitycs
 googleAnalitycsID = "UA-161962212-1"
