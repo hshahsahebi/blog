@@ -76,7 +76,7 @@ enableRobotsTXT = true
 logo = "images/logo.png"
 home = "Home"
 # Meta data
-description = "Here, I'm going to write about my daily life as a web developer. Technologies, tools, programming languages, webmaster-related, and many more categories that seems reasonable to know about in programming world. There might be some non-technical articles as well but there is a reason behind everything in Hossein's blog!"
+description = "Here are articles about programming, SEO, analytics, technology, and a developer's daily life crafted by Hossein Shahsahebi."
 author = "Hossein Shahsahebi"
 # Google Analitycs
 googleAnalitycsID = "UA-161962212-1"
