@@ -11,6 +11,9 @@ enableEmoji = true
 [outputs]
   home = ["HTML", "RSS", "JSON"]
 
+[permalinks]
+  posts = "/:title"
+
 ############################# Plugins ##############################
 [params.plugins]
 
