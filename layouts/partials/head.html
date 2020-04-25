@@ -21,7 +21,7 @@
     <meta property="og:title" content="{{ if eq $postPage true }}{{ .Params.title }}{{ else }}{{ .Site.Title }}{{ end }}" />
     <meta property="og:type" content="{{ if eq $postPage true }}article{{else}}website{{ end }}" />
     <meta property="og:url" content="{{ .Permalink }}" />
-    <meta property="og:image" content="{{ .Site.BaseURL }}/{{ if eq $postPage true }}{{ .Params.image }}{{ else }}images/logo.png{{ end }}" />
+    <meta property="og:image" content="{{ .Site.BaseURL }}/{{ if eq $postPage true }}{{ .Params.image }}{{ else }}images/logo-300.png{{ end }}" />
     <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}" />
     <meta property="og:site_name" content="Hossein's Blog" />
     {{ if eq $postPage true }}
