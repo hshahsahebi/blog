@@ -7,6 +7,7 @@ summaryLength = "10"
 paginate = 6
 disqusShortname = ""
 enableEmoji = true
+enableRobotsTXT = true
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
